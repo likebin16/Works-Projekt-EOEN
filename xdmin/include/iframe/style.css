@@ -1,0 +1,41 @@
+.layui-input, .layui-select, .layui-textarea {
+    border: 1px solid #d2d2d2;
+}
+.layui-input, .layui-textarea {
+    width: 80%;
+}
+.layui-form-select .layui-edge {
+    right: 22%;
+}
+.layui-form-select dl, .layui-nav-child {
+    min-width: 80%;
+}
+#err {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    max-width: 200px;
+    border-radius: 2px;
+    padding: 20px 18px;
+    position: absolute;
+    top: 24%;
+    left: 35%;
+    font-size: 14px;
+    z-index: 99999;
+    animation-name: bounceIn;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+}
+.layui-form-label span {
+    color: red;
+    top: 14px;
+	right: 3px;
+    font-size: 21px;
+    position: absolute;
+}
+.hk-search {
+    display: inline;
+    width: 230px;
+}

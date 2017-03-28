@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteBase   /
+RewriteRule ^login$ login.php [L]
+RewriteRule ^view$ view.php [L]
+RewriteRule ^logout$ logout.php [L]
+RewriteRule ^users$ users.php [L]
+RewriteRule ^salary$ salary.php [L]
+RewriteRule ^personal$ personal.php [L]
+RewriteRule ^password$ password.php [L]

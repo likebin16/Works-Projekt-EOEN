@@ -1,0 +1,497 @@
+.psmile {
+	position: absolute;
+	top: 2.7em;
+	right: 10em;
+}
+
+.psmile:hover {
+	background: limegreen;
+}
+
+.smile {
+	height: 1em;
+	width: 1em;
+	border-radius: 0.5em;
+	box-shadow: 0 0 0 0.2em white,inset 0 0 0 0.05em white;
+}
+
+.smile::after,.smile::before {
+	content: '';
+	position: absolute;
+	height: 0.5em;
+	width: 0.5em;
+	background: radial-gradient(transparent 30%,white 30%);
+}
+
+.smile:before {
+	right: 0;
+}
+
+.smile:after {
+	left: 0;
+}
+
+.bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background-size: 100% 100%;
+	*/
+	filter: blur(10px);
+	margin: -10px;
+	overflow: hidden;
+}
+
+.picon {
+	position: absolute;
+	top: 2em;
+	right: 6em;
+	padding: 1em;
+}
+
+.picon:hover,.picon:focus {
+	background: rgba(255,255,255,1.0);
+}
+
+.picon:hover .icon,.picon:focus .icon {
+	color: black;
+}
+
+.icon {
+	width: 0.25em;
+	height: 0.25em;
+	color: white;
+	box-shadow: 0 -0.5em,-0.5em -0.5em,0.5em -0.5em,0 0.5em inset,-0.5em 0,0.5em 0,0 0.5em,-0.5em 0.5em,0.5em 0.5em;
+}
+
+.box {
+	position: absolute;
+	top: 5.5em;
+	right: 2em;
+	padding: 1em;
+	width: 17em;
+	height: auto;
+	border-radius: 0.5em;
+	background: rgba(255,255,255,1.0);
+}
+
+.box a {
+	display: inline-block;
+	width: 6em;
+	padding: 0.8em 1em;
+	color: black;
+}
+
+.box a:hover {
+	color: white;
+	background: black;
+}
+
+.box:after {
+	content: "";
+	position: absolute;
+	top: -1em;
+	right: 4em;
+	border-style: solid;
+	border-width: 0 1em 1em 1em;
+	border-color: transparent transparent white transparent;
+}
+
+.s {
+	margin: 2em auto -4.5em auto;
+	width: 30em;
+	height: 2.5em;
+	border-radius: 3em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.si {
+	width: 30em;
+	height: 100%;
+	line-height: 100%;
+	padding-left: 1em;
+	border-radius: 2.5em 0 0 2.5em;
+	color: black;
+	background: rgba(255,255,255,0.4);
+}
+
+.ss {
+	width: 6em;
+	height: 100%;
+	line-height: 100%;
+	cursor: pointer;
+	border-radius: 0 2.5em 2.5em 0;
+	color: black;
+	background: rgba(255,255,255,0.4);
+	font-size: 1em;
+}
+
+.ss:hover {
+	color: white;
+	background: dodgerblue;
+	text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.ss:hover span {
+	display: none;
+}
+
+.ss:hover:after {
+	content: "Search";
+}
+
+.c {
+	height: auto;
+	width: 100%;
+	text-align: left;
+}
+
+.c ul {
+	text-align: left;
+	display: inline-block;
+}
+
+.c li {
+	text-align: center;
+	display: inline-block;
+}
+
+.c li a {
+	height: 6em;
+	width: 6em;
+	margin: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	white-space: nowrap;
+	display: block;
+	background: rgba(57, 61, 73, 0.09);
+}
+
+.c li a:hover {
+	background: rgba(255,255,255,1.0);
+}
+/*  
+.c li a:hover i {
+	transform:rotateX(80deg);
+	transform-origin:center bottom 0;
+	transition:0.4s;
+} */
+.c li a:hover span {
+	visibility: visible;
+	z-index: 0;
+}
+
+.c li i {
+	margin: 0 auto 0.8em auto;
+	/* transition:0.4s; */
+}
+
+.c li span {
+	color: black;
+	/* position:absolute;
+	padding-bottom:2em;
+	font-weight:bold;
+	visibility:hidden;
+	z-index:-1; */
+}
+
+.f {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 3em;
+	line-height: 3em;
+	background: rgba(255,255,255,0.2);
+}
+
+.f a {
+	color: white;
+	padding: 0 1em;
+	display: inline-block;
+}
+
+.f a:hover {
+	transition: 0.3s;
+	background: rgba(255,255,255,0.4);
+	text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.fl {
+	position: absolute;
+	left: 5%;
+}
+
+.fr {
+	position: absolute;
+	right: 5%;
+}
+
+.fr:focus + .drop {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-top: 10%;
+	text-align: center;
+	color: black;
+	background: white;
+	opacity: 0.8;
+	font-size: 6em;
+}
+
+.drop {
+	display: none;
+}
+
+.top {
+	visibility: hidden;
+}
+
+@media screen and (max-device-width:600px) {
+	.psmile,.smile,.fl {
+		display: none;
+	}
+
+	.bg {
+		background: transparent;
+	}
+
+	.picon {
+		position: absolute;
+		right: 3em;
+	}
+
+	.box {
+		position: absolute;
+		right: 1em;
+	}
+
+	.box:after {
+		position: absolute;
+		right: 2em;
+	}
+
+	.c li a {
+		height: 4em;
+		width: 4em;
+		margin: 1em;
+		padding: 0;
+		background: transparent;
+	}
+
+	.fr:focus + .drop {
+		font-size: 2em;
+	}
+
+	.top {
+		visibility: visible;
+		position: absolute;
+		left: 5%;
+	}
+}
+
+.i {
+	background-image: url(../../../weburl/file/i.png);
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.i-500px {
+	width: 60px;
+	height: 60px;
+	background-position: -10px -10px;
+}
+
+.i-500px-black {
+	width: 60px;
+	height: 60px;
+	background-position: -90px -10px;
+}
+
+.i-amazon {
+	width: 60px;
+	height: 60px;
+	background-position: -170px -10px;
+}
+
+.i-baiduyun {
+	width: 60px;
+	height: 60px;
+	background-position: -250px -10px;
+}
+
+.i-bilibili {
+	width: 60px;
+	height: 60px;
+	background-position: -330px -10px;
+}
+
+.i-bing {
+	width: 60px;
+	height: 60px;
+	background-position: -10px -90px;
+}
+
+.i-douban {
+	width: 60px;
+	height: 60px;
+	background-position: -90px -90px;
+}
+
+.i-dropbox {
+	width: 60px;
+	height: 60px;
+	background-position: -170px -90px;
+}
+
+.i-ed2000 {
+	width: 60px;
+	height: 60px;
+	background-position: -250px -90px;
+}
+
+.i-jianshe {
+	width: 60px;
+	height: 60px;
+	background-position: -330px -90px;
+}
+
+.i-github {
+	width: 60px;
+	height: 60px;
+	background-position: -10px -170px;
+}
+
+.i-gmail {
+	width: 60px;
+	height: 60px;
+	background-position: -90px -170px;
+}
+
+.i-google {
+	width: 60px;
+	height: 60px;
+	background-position: -170px -170px;
+}
+
+.i-googledrive {
+	width: 60px;
+	height: 60px;
+	background-position: -250px -170px;
+}
+
+.i-googlemaps {
+	width: 60px;
+	height: 60px;
+	background-position: -330px -170px;
+}
+
+.i-googletranslate {
+	width: 60px;
+	height: 60px;
+	background-position: -10px -250px;
+}
+
+.i-googlevoice {
+	width: 60px;
+	height: 60px;
+	background-position: -90px -250px;
+}
+
+.i-instagram {
+	width: 60px;
+	height: 60px;
+	background-position: -170px -250px;
+}
+
+.i-jingdong {
+	width: 60px;
+	height: 60px;
+	background-position: -250px -250px;
+}
+
+.i-mp4ba {
+	width: 60px;
+	height: 60px;
+	background-position: -330px -250px;
+}
+
+.i-onedrive {
+	width: 60px;
+	height: 60px;
+	background-position: -10px -330px;
+}
+
+.i-outlook {
+	width: 60px;
+	height: 60px;
+	background-position: -90px -330px;
+}
+
+.i-qqmusic {
+	width: 60px;
+	height: 60px;
+	background-position: -170px -330px;
+}
+
+.i-qzone {
+	width: 60px;
+	height: 60px;
+	background-position: -250px -330px;
+}
+
+.i-taobao {
+	width: 60px;
+	height: 60px;
+	background-position: -330px -330px;
+}
+
+.i-theweatherchannel {
+	width: 60px;
+	height: 60px;
+	background-position: -410px -10px;
+}
+
+.i-alipay {
+	width: 60px;
+	height: 60px;
+	background-position: -410px -90px;
+}
+
+.i-weibo {
+	width: 60px;
+	height: 60px;
+	background-position: -410px -170px;
+}
+
+.i-weiyun {
+	width: 60px;
+	height: 60px;
+	background-position: -410px -250px;
+}
+
+.i-wikipedia {
+	width: 60px;
+	height: 60px;
+	background-position: -410px -330px;
+}
+
+.i-zhihu {
+	width: 60px;
+	height: 60px;
+	background-position: -10px -410px;
+}
+
+.i-zimuzu {
+	width: 60px;
+	height: 60px;
+	background-position: -90px -410px;
+}

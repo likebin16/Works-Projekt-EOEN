@@ -1,0 +1,444 @@
+@charset "utf-8";
+/*
+* @Author: Larry
+* @Date:   2016-12-15 17:20:54
+* @Last Modified by:   qinsh
+* @Last Modified time: 2016-12-20 18:06:40
+* +----------------------------------------------------------------------
+* | LarryBlogCMS [ LarryCMS网站内容管理系统 ]
+* | Copyright (c) 2016-2017 http://www.larrycms.com All rights reserved.
+* | Licensed ( http://www.larrycms.com/licenses/ )
+* | Author: qinshouwei <313492783@qq.com>
+* +----------------------------------------------------------------------
+*/
+/* 公共样式 */
+body{
+	background: #F1F2F7;
+	overflow-x:hidden;
+	padding: 0px;
+}
+
+.larry-personal{
+	margin: 0 auto;
+	background: #ffffff;
+	border-radius: 3px;
+	padding-bottom: 0px;
+	border: none;
+}
+header.larry-personal-tit{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #EEEFF1;
+	padding:0 20px;
+	padding-left: 30px;
+}
+header.larry-personal-tit span{
+	line-height: 50px;
+	font-size: 14px;
+	color: #858585;
+	font-weight: 300;
+}
+.larry-personal-body{
+	padding: 20px;
+}
+.layui-form{
+	padding: 0px;
+}
+/* 个人信息 */
+.layui-form .layui-form-item label.layui-form-label{
+	width: 120px;
+	font-family: "Microsoft YaHei";
+}
+.layui-input-block{
+	margin-left: 160px;
+}
+.layui-disabled{
+	background: #EEEEEE;
+	color: #595963 !important;
+}
+.layui-disabled:hover{
+	color: #595963 !important;
+}
+.layui-input-block textarea{
+	height: 90px;
+}
+/* 修改密码 */
+.changepwd{
+	padding-bottom: 150px;
+}
+.change-submit{
+	margin-top: 20px;
+}
+/* 日志管理 */
+.layui-elem-quote{
+	background: #ffffff;
+	border-bottom: 1px solid #E2E2E2;
+	margin-bottom: 0px;
+}
+.larry-separate{
+	background: #F2F2F2;
+	width: 100%;
+	height: 10px;
+}
+.mylog-info-tit .layui-tab-title{
+	border: none;
+}
+.mylog-info-tit .layui-tab-title li{
+	color: #ffffff;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+.mylog-info-tit .layui-tab-title li i{
+	padding-right: 5px;
+}
+.mylog-info-tit .layui-tab-title li.layui-this{
+	background: #FF5722;
+	border: none;
+	border-radius: 3px;
+}
+.larry-log-del{
+	display: inline-block;
+	width: 100px;
+	height: 38px;
+	float: right;
+	color: #ffffff;
+	line-height: 38px;
+	text-align: center;
+}
+.larry-log-del i{
+	display: inline-block;
+	font-size: 16px;
+}
+.mylog-info-box .layui-tab-content{
+	margin: 0px;
+	padding: 0px;
+}
+.mylog-info-box .layui-tab-content .layui-tab-item{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+.mylog-info-box{
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+.mylog-info-box .layui-tab-item{
+/* 	border: 1px solid red; */
+}
+.layui-field-box .layui-table{
+	margin-top: 0px;
+	border: 1px solid #E2E2E2;
+}
+.layui-field-box .layui-table tr th,
+.layui-field-box .layui-table tr td{
+	text-align: center;
+/* 	padding: 0px; */
+}
+.layui-field-box .layui-table tr th:first-child,
+.layui-field-box .layui-table tr td:first-child{
+	width: 40px;
+	padding: 0px;
+}
+.layui-field-box .layui-table tr th:nth-child(2){
+	padding: 0px;
+	text-align: left;
+	text-indent: 5px;
+}
+.layui-field-box .layui-table tr td:nth-child(2){
+	padding: 0px;
+	text-align: left;
+}
+.table-hover tbody tr:hover{ 
+	background-color: #EEEEEE; 
+}
+.layui-btn i{
+	padding-right: 5px;
+}
+.larry-table-page{
+	width: 100%;
+	height: 50px;
+	padding-top: 6px;
+}
+.larry-table-page .layui-btn{
+	display: block;
+	float: left;
+}
+.larry-table-page .page{
+	float: left;
+}
+.larry-table-page .page .layui-laypage{
+	padding: 0px;
+	margin: 0px;
+}
+/* add more css */
+.layui-layer-iframe .layui-input,
+.layui-layer-iframe .layui-form-select,
+.layui-layer-iframe .layui-input-block 
+{
+    width: 280px;
+}
+.cfo-body-letir {
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    height: 620px;
+    width: 850px;
+    margin-bottom: 20px;
+}
+.cfo-title {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.cfo-uoload {
+    text-align: center;
+    margin: 20% 0 0 0;
+}
+.cfo-body-letir .layui-btn-disabled {
+    color: #707175;
+    border: 1px solid #cccccc;
+    margin: 0 -3px 0 -3px;
+}
+#page .cur {
+    color: #fff;
+    background-color: #009688;
+    border-radius: 2px;
+}
+input#file1 {
+    width: 149px;
+    height: 39px;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    left: 390px;
+}
+.Upload_log {
+    border: 1px solid #ddd;
+    height: 495px;
+    overflow: scroll;
+    width: 850px;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+.Upload_log_table {
+    min-width: 100%;
+    width: auto;
+}
+.Upload_log_table th {
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    background: #efefef;
+    color: #06b5ff;
+    padding: 0 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+.Upload_log_table td {
+    line-height: 45px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+.Upload_log_filter {
+    width: 100%;
+    margin: 10px 0 0 -3px;
+}
+.clearfix {
+    clear: both;
+    zoom: 1;
+}
+.Upload_log_filter_li li {
+    float: left;
+    display: inline;
+    font-size: 15px;
+    margin-left: 10px;
+    line-height: 2.5em;
+}
+.Upload_log_filter_li select ,.Upload_log_filter_li .Wdate{
+    border: 1px solid #d3d3d3;
+    background: #fff;
+    color: #999;
+    padding: 2px 0;
+    height: 27px;
+    font-size: 14px;
+}
+a#Up {
+    float: right;
+    width: 150px;
+    margin: 25px 0;
+}
+.fldsax {
+    width: 150px;
+    margin: 25px 0;
+    font-weight: normal;
+    position: absolute;
+    z-index: 1;
+}
+.set-pot {
+    width: 50%;
+    height: 551px;
+    margin: -1px 0 0px -1px;
+    float: left;
+    border-radius: 2px;
+    border: 1px solid #dddddd;
+	overflow: scroll;
+}
+.set-out {
+    width: 50%;
+    float: right;
+    height: 551px;
+    margin: -1px 0 0 0;
+    border-radius: 2px;
+    border: 1px solid #dddddd;
+	overflow: scroll;
+}
+.set-pot h4 {
+    background-color: #FF5722;
+    padding: 15px 0 15px 15px;
+    color: #fff;
+    font-size: 16px;
+}
+.set-out h4 {
+    background-color: #5FB878;
+    padding: 15px 0 15px 15px;
+    color: #fff;
+    font-size: 16px;
+}
+.tab-header .soid, .bg-w .pustd {
+    background-color: #d2d2d2;
+    width: 205px;
+    height: 40px;
+    float: left;
+    color: #ff5722;
+    padding: 10px 15px;
+}
+.tab-header .poid, .bg-w .sdmop {
+    background-color: #d2d2d2;
+    width: 207px;
+    height: 40px;
+    float: right;
+    color: #ff5722;
+    font-weight: normal;
+    padding: 10px 15px;
+}
+li#item_1 {
+    width: 412px;
+    border-bottom: 1px solid #dddddd;
+}
+.item span {
+    width: 211px;
+    height: 35px;
+    float: left;
+    padding: 5px 0 0 15px;
+    border-right: 1px solid #dddddd;
+}
+.item label {
+    padding: 0 0 0 15px;
+}
+.item input#box-1 {
+    width: 18px;
+}
+ul.lmz {
+	margin-top: 10px;
+    width: 200px;
+    float: left;
+}
+ul.bmz {
+	margin-top: 10px;
+    width: 210px;
+    float: right;
+}
+.lmz li, .bmz li {
+    width: 210px;
+    height: 35px;
+    padding: 5px 0 0 15px;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+.lood_body {
+    width: 850px;
+    min-height: 650px;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+}
+.lood_left {
+    width: 200px;
+    float: left;
+    min-height: 650px;
+    border-right: 1px solid #e2e2e2;
+}
+.lood_right {
+    width: 648px;
+    float: right;
+}
+.lood_left h4 {
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 0 12px 12px;
+    background-color: #009688;
+}
+.lood_right h4 {
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 0 12px 12px;
+    background-color: #009688;
+}
+ul.Salary_detail_menu_li {
+    height: 607px;
+    overflow: scroll;
+    font-size: 15px;
+}
+.Salary_detail_menu_li li {
+    padding: 4px 0 4px 13px;
+    line-height: 30px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.Salary_detail_menu_li li.hover {
+    background-color: #5FB878;
+    color: #fff;
+}
+.sfbiry {
+    height: 607px;
+    overflow: scroll;
+    font-size: 15px;
+}
+ul.Salary_detail_li {
+    line-height: 30px;
+}
+.Salary_detail_li li {
+    float: left;
+    width: 100%;
+    padding: 0 13px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.tit {
+    float: left;
+    width: 150px;
+    margin-right: 13px;
+    border-right: 1px solid #e2e2e2;
+}
+.Salary_detail_li li:nth-child(2n-2) {
+    background-color: rgba(238, 238, 238, 0.52);
+    transition: all 0.125s ease-in-out;
+}
+#err {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    max-width: 200px;
+    border-radius: 2px;
+    padding: 20px 18px;
+    position: absolute;
+    top: 24%;
+    left: 35%;
+    font-size: 14px;
+    z-index: 99999;
+    animation-name: bounceIn;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+}
+p.pageEllipsis {
+    display: inline-block;
+}

@@ -1,0 +1,123 @@
+.header {
+    height: 65px;
+    border-bottom: 1px solid #404553;
+    background-color: #393D49;
+    color: #fff;
+}
+.layui-main {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1000px){
+	.layui-main {
+		width: auto;
+		margin: 0 20px;
+		min-width: 600px;
+	}
+}
+.logo {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    font-size: 25px;
+    color: #FFF;
+}
+.header .layui-nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    background: none;
+}
+.header .layui-nav .layui-nav-item {
+    margin: 0 10px;
+    line-height: 66px;
+}
+.site-tree, .site-content {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+.site-tree {
+    width: 220px;
+    min-height: 735px;
+    padding: 5px 0 20px;
+    border-right: 1px solid #eee;
+}
+.site-tree .layui-tree {
+    line-height: 32px;
+}
+.layui-tree li {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.site-tree .layui-tree li h2 {
+    line-height: 36px;
+    border-left: 5px solid #009E94;
+    margin: 15px 0 5px;
+    padding: 0 10px;
+    background-color: #f2f2f2;
+}
+.layui-tree li .layui-tree-spread, .layui-tree li a {
+    display: inline-block;
+    vertical-align: top;
+    height: 26px;
+    cursor: pointer;
+}
+.site-tree .layui-tree li a cite {
+    padding: 0 8px;
+}
+.site-tree .layui-tree .site-tree-noicon a cite {
+    padding-left: 15px;
+}
+.site-tree .layui-tree .layui-this a, .site-tree .layui-tree .layui-this a i {
+    color: #01AAED;
+}
+.site-content {
+    width: 890px;
+    padding: 20px 0 10px 20px;
+}
+.site-h1 {
+    margin-bottom: 20px;
+    line-height: 60px;
+    padding-bottom: 10px;
+    color: #393D49;
+    border-bottom: 1px solid #eee;
+    font-size: 28px;
+    font-weight: 300;
+}
+.layui-tab-title li {
+    border-left: none;
+}
+.layui-elem-field {
+    width: 49%;
+}
+.per-left {
+    float: left;
+}
+.per-right {
+    float: right;
+}
+.layui-elem-field .layui-elem-quote {
+    margin-bottom: 0;
+}
+.pass-form {
+    border: 1px solid #e2e2e2;
+    padding: 30px 0;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.pass-form .layui-form-item {
+	width: 50%;
+}
+@media screen and (max-width: 1000px){
+	.site-content {
+		width: 64%;
+		min-width: 454px;
+	}
+}
+p.pageEllipsis {
+    display: inline-block;
+}
